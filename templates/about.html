@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}About Us - InvestSmart{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="about-image">
+    <img src="{{ url_for('static', filename='about.png') }}" alt="About Us">
+  </div>
+  <div class="about-text">
+    <h1>About Us</h1>
+    <p>
+      InvestSmart is an AI-based, student-built platform that simplifies tax-saving and investment decisions using data science and smart recommendations.
+    </p>
+  </div>
+</div>
+{% endblock %}

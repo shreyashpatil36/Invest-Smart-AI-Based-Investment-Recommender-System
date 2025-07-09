@@ -1,0 +1,117 @@
+/* ---------- Global Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: #008080; /* Teal */
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.nav-logo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.nav-logo span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- About Us Section ---------- */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ---------- Left Side Image ---------- */
+.about-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 128, 128, 0.3);
+}
+
+/* ---------- Right Side Text ---------- */
+.about-text {
+  flex: 2;
+  min-width: 300px;
+}
+
+.about-text h1 {
+  color: #008080; /* Teal */
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .about-image img {
+    max-width: 80%;
+    margin-bottom: 1rem;
+  }
+}

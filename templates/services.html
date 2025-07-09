@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Services - InvestSmart{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='services.css') }}">
+{% endblock %}
+{% block content %}
+<div class="container service-flex">
+  <!-- 📷 Left Side: Image -->
+  <div class="service-image">
+    <img src="{{ url_for('static', filename='service-graphic.png') }}" alt="Service Illustration">
+  </div>
+
+  <!-- 📝 Right Side: Text -->
+  <div class="service-text">
+    <h1>Our Services</h1>
+    <p>
+      We offer personalized investment recommendations, risk profiling tools, tax planning insights, and financial goal tracking—all powered by machine learning.
+    </p>
+    <a href="/predict" class="cta-button">Get Your Investment Plan</a>
+
+  </div>
+</div>
+{% endblock %}

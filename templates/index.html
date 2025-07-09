@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Home - InvestSmart{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+{% endblock %}
+{% block content %}
+<div class="home-wrapper">
+  <div class="home-text">
+    <h1>Welcome to InvestSmart</h1>
+    <p>
+      Get smart, AI-powered investment advice to save tax and grow <strong>wealth wisely.</strong>
+    </p>
+    <a href="/predict" class="cta-button">Start Planning</a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Result - InvestSmart{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="result-image">
+    <img src="{{ url_for('static', filename='result.png') }}" alt="Result Illustration">
+  </div>
+
+  <h1>Your Investment Recommendation</h1>
+
+{% if result %}
+  <div class="result-box">
+    <p>{{ result }}</p>
+  </div>
+{% else %}
+  <p>No result found. Please fill out the prediction form first.</p>
+{% endif %}
+{% endblock %}

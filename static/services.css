@@ -1,0 +1,139 @@
+/* ---------- Global Styles ---------- */
+body {
+    background-color: #ffffff;  /* White background */
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222222; /* Default dark gray text */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ---------- Navbar Styles ---------- */
+.navbar {
+    background-color: #008080;  /* Teal */
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.nav-logo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.nav-logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ---------- Container Layout ---------- */
+.container {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ---------- Flex Layout: Image + Text ---------- */
+.service-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Left Side: Image */
+.service-image img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #ff6600; /* Bright Orange border */
+}
+
+/* Right Side: Text */
+.service-text {
+    flex: 1;
+}
+
+.service-text h1 {
+    color: #008080;         /* Teal heading */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.service-text p {
+    font-size: 1.1rem;
+    color: #222222;         /* Dark gray text */
+    line-height: 1.7;
+    letter-spacing: 0.3px;
+}
+
+/* ---------- Optional: CTA Button ---------- */
+.service-text .cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #ff6600;  /* Bright Orange */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.service-text .cta-button:hover {
+    background-color: #cc5200;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+    .service-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-image img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .nav-logo span {
+        font-size: 1.4rem;
+    }
+
+    .navbar ul {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+}

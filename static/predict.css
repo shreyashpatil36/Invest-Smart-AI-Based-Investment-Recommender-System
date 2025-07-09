@@ -1,0 +1,151 @@
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: #008080; /* Teal */
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-logo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.nav-logo span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- Background ---------- */
+body {
+  background-image: url("../static/pre.jpg"); /* Replace with your actual image file */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ---------- Transparent Form Container ---------- */
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Heading ---------- */
+h1 {
+  color: #0c0c0c; /* Teal */
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------- Transparent Inputs and Selects ---------- */
+input,
+select {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid rgba(16, 14, 14, 0.932);
+  font-size: 1.3rem;
+
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: #080606;
+  font-weight: 600;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+
+  transition: background-color 0.3s, border 0.3s;
+}
+
+input::placeholder,
+select:invalid {
+  color: rgba(11, 11, 11, 0.8);
+  font-weight: 500;
+}
+
+/* ---------- Focus Styles ---------- */
+input:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #ff6600; /* Orange outline on focus */
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ---------- Button ---------- */
+button {
+  background-color: #ff6600; /* Bright orange */
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #cc5200;
+}
+
+/* ---------- Result Text (optional) ---------- */
+.result-text {
+  margin-top: 2rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .container {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}

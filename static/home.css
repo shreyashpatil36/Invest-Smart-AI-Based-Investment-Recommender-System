@@ -1,0 +1,149 @@
+/* ---------- Global Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  background-image: url("../static/1.jpg"); /* Replace with actual image */
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #222222;
+}
+
+/* ---------- Navbar Styles ---------- */
+.navbar {
+  background-color: #008080; /* Teal */
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.nav-logo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.nav-logo span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- Flex Container for Left Text Layout ---------- */
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: calc(100vh - 80px); /* full height minus navbar */
+  padding: 0 5%;
+  position: relative;
+}
+
+/* ---------- Text Block ---------- */
+.home-text {
+  max-width: 500px;
+}
+
+.home-text h1 {
+  color: #e8ebeb;
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.5px;
+}
+
+.home-text p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- CTA Button ---------- */
+.cta-button {
+  background-color: #ff6600; /* Orange */
+  color: #fff;
+  font-weight: bold;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #cc5200;
+}
+
+/* ---------- Animation Container (Optional) ---------- */
+.animation-container {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 768px) {
+  .nav-logo span {
+    font-size: 1.4rem;
+  }
+
+  .navbar ul {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .home-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .home-text h1 {
+    font-size: 2rem;
+  }
+
+  .home-text p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1.2rem;
+  }
+}
